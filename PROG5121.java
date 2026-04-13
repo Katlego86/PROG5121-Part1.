@@ -79,7 +79,7 @@ class Login {
         return username.contains("_") && username.length() <= 5;
     }
 
-    // Validation for User Password when creating
+    // Password validation added, passwords must meet the security rules
     public boolean checkPasswordComplexity(String password) {
         return password.length() >= 8 &&
                password.matches(".*[A-Z].*") &&
