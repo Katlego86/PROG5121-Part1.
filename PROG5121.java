@@ -62,7 +62,7 @@ public class PROG5121 {
     }
 }
 
-// USER CLASS
+// Creating the user class, setting the user details structure
 class User {
     String firstName;
     String lastName;
@@ -71,7 +71,7 @@ class User {
     String contactNumber;
 }
 
-// LOGIN CLASS
+//Login Class
 class Login {
 
     // Validation for the username - when creating
