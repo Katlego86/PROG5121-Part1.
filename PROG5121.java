@@ -1,5 +1,5 @@
 package com.mycompany.prog5121;
-//project setup - starting the project**
+//project setup - starting the project for user registration details
 import java.util.Scanner;
 
 public class PROG5121 {
@@ -62,7 +62,7 @@ public class PROG5121 {
     }
 }
 
-// Creating the user class, setting the user details structure
+// Creating the user class, setting the user details for user strucure**
 class User {
     String firstName;
     String lastName;
@@ -74,12 +74,12 @@ class User {
 //Login Class
 class Login {
 
-    // Username Validation added, validation  to be met
+    // Username Validation added, validation to be met with the criteria**
     public boolean checkUserName(String username) {
         return username.contains("_") && username.length() <= 5;
     }
 
-    // Password validation added, passwords must meet the security rules
+    // Password validation added, password must the meet the security rule or criteria
     public boolean checkPasswordComplexity(String password) {
         return password.length() >= 8 &&
                password.matches(".*[A-Z].*") &&
@@ -87,7 +87,7 @@ class Login {
                password.matches(".*[^a-zA-Z0-9].*");
     }
 
-    // Validation for Contact Numbers - checking the phone is south africa standard(+27)
+    // Validation for Contact Numbers -they need to be on the south africa standard +27**
     public boolean checkCellPhoneNumber(String contactNumber) {
         // Format Validation - Its in South Africa contact number format( +27)
         return contactNumber.matches("^\\+27\\d{9}$");
@@ -123,6 +123,6 @@ class Login {
         } else {
             return "Username or password incorrect, please try again";
         }
-      //  finalised testing and all cleans up done with good testing results
+      //  finalised testing done and made few clean ups**
     }
 }
