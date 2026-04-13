@@ -74,7 +74,7 @@ class User {
 //Login Class
 class Login {
 
-    // Validation for the username - when creating
+    // Username Validation added, validation to be met
     public boolean checkUserName(String username) {
         return username.contains("_") && username.length() <= 5;
     }
