@@ -87,7 +87,7 @@ class Login {
                password.matches(".*[^a-zA-Z0-9].*");
     }
 
-    // Validation for Contact Numbers (+27833374746)
+    // Validation for Contact Numbers - checking the phone is south africa standard(+27)
     public boolean checkCellPhoneNumber(String contactNumber) {
         // Format Validation - Its in South Africa contact number format( +27)
         return contactNumber.matches("^\\+27\\d{9}$");
