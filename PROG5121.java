@@ -1,5 +1,5 @@
 package com.mycompany.prog5121;
-
+//project setup - starting the project**
 import java.util.Scanner;
 
 public class PROG5121 {
